@@ -1,0 +1,50 @@
+#first{
+    background: linear-gradient(300deg, #66bbeb, #ff4c68, #c8dc15);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  padding: 30px;
+  border: 2px solid antiquewhite;
+  border-radius: 5px;
+  height: fit-content;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#first img{
+    border-radius: 50%;
+    border: 10px solid aqua;
+}
+#first p{
+  margin-bottom: 50px ;
+  margin-top: 50px;
+}
+#first button{
+  background-color: white;
+  color: rgb(19, 4, 81);
+  border: 1px solid aqua;
+}
+
+.row1{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container4{
+  background-color: antiquewhite;
+}
+
+@media (max-width:768px) {
+  .row1{
+    flex-direction: column;
+    gap: 20px;
+  }
+}
